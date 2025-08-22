@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BKS Cincos - أرباح رقمية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="login-screen" class="screen active">
+        <!-- Sparkles for background -->
+        <div class="sparkle" style="top: 20%; left: 15%;"></div>
+        <div class="sparkle" style="top: 60%; left: 80%;"></div>
+        <div class="sparkle" style="top: 80%; left: 40%;"></div>
+        <div class="sparkle" style="top: 30%; left: 70%;"></div>
+        <div class="sparkle" style="top: 70%; left: 20%;"></div>
+        
+        <div class="login-container">
+            <div class="app-logo">
+                <i class="fas fa-crown"></i> BKS Cincos
+            </div>
+            
+            <div class="input-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="login-username" placeholder="اسم المستخدم">
+            </div>
+            
+            <div class="input-icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="login-email" placeholder="البريد الإلكتروني">
+            </div>
+            
+            <div class="input-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="login-password" placeholder="الرقم السري">
+            </div>
+            
+            <div class="input-icon">
+                <i class="fas fa-user-plus"></i>
+                <input type="text" id="referral-code" placeholder="كود الإحالة (اختياري)">
+            </div>
+            
+            <button id="login-btn" class="btn" style="width: 100%;">
+                <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </button>
+            
+            <div class="login-footer">
+                ليس لديك حساب؟ <a href="#" id="register-link">إنشاء حساب جديد</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-app" class="screen">
+        <header>
+            <div class="header-top">
+                <h1 class="app-title">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjN2IzZmU0IiBkPSJNNTA0IDI1NmMwIDEzNi44NzUtMTExLjEyNSAyNDgtMjQ4IDI0OFM4IDM5Mi44NzUgOCAyNTZTMTA5LjEyNSA4IDI1NiA4czI0ODExMS4xMjUgMjQ4IDI0OHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzYwIDI1NkgyNTZWMTUyYzAtMTMuMjU2LTEwLjc0NC0yNC0yNC0yNHMtMjQgMTAuNzQ0LTI0IDI0djExNGgtMTA0Yy0xMy4yNTYgMC0yNCAxMC43NDQtMjQgMjRzMTAuNzQ0IDI0IDI0IDI0aDEwNHYxMTRjMCAxMy4yNTYgMTAuNzQ0IDI0IDI0IDI0czI0LTEwLjc0NCAyNC0yNFYyODBIMTUyYy0xMy4yNTYgMC0yNC0xMC43NDQtMjQtMjRzMTAuNzQ0LTI0IDI0LTI0aDEwNFYxNTJjMC0xMy4yNTYgMTAuNzQ0LTI0IDI0LTI0czI0IDEwLjc0NCAyNCAyNHY4MGgxMDRjMTMuMjU2IDAgMjQgMTAuNzQ0IDI0IDI0cy0xMC43NDQgMjQtMjQgMjR6Ii8+PC9zdmc+" alt="Logo"> 
+                    BKS Cincos
+                </h1>
+                <div class="balance-display">
+                    الرصيد: <span id="balance-amount">0.00$</span>
+                </div>
+            </div>
+            <div class="withdrawal-feed">
+                <span id="feed-item" class="feed-item"></span>
+            </div>
+        </header>
+        <main id="main-content"></main>
+        <footer>
+            <nav id="nav-bar"></nav>
+        </footer>
+    </div>
+    
+    <div id="modal-overlay" class="modal"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
